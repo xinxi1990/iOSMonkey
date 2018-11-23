@@ -79,5 +79,3 @@ java -jar iOSMonkey-1.0.jar -f ~/config.yaml -c 1
 ~/Library/Logs/DiagnosticReports
 
 
-```
-
