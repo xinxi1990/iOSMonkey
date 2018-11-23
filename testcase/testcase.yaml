@@ -1,0 +1,33 @@
+# 多值用;号隔开
+# when是空用""表示
+testcase:
+  casename: "test1"
+  steps:
+  - when: "name;我的"
+    by: "xpath;//XCUIElementTypeStaticText[@name="Toolbars"]"
+    action: "click"
+    sleeptime: "500"
+  - when: "name;我的学生证"
+    by: 'name;我的学生证'
+    action: "click"
+    sleeptime: "500"
+  - when: "name;手机登录"
+    by: 'name;手机登录'
+    action: "click"
+    sleeptime: "500"
+  - when: ""
+    by: 'name;使用密码登录'
+    action: "click"
+    sleeptime: "500"
+  - when: ""
+    by: 'xpath;//XCUIElementTypeTextField'
+    action: 'sendKeys;15010158425'
+    sleeptime: "500"
+  - when: ""
+    by: 'xpath;//XCUIElementTypeSecureTextField'
+    action: 'sendKeys;123456'
+    sleeptime: "500"
+  - when: ""
+    by: 'name;登录'
+    action: "click"
+    sleeptime: "500"
