@@ -135,6 +135,13 @@ public class Monkey {
         long startTime = System.currentTimeMillis();
         Map coordinateMap = calculateCoordinate(iosDriver);
 
+        if (!TestCase.equals("")){
+            log_info("用例文件地址:" + TestCase);
+            new CaseEvent(iosDriver).generateCase(TestCase); //生成case
+        }else {
+            log_info("未配置测试用例,进行Monkey测试!");
+        }
+
         if (NeedScreenshot.equals(Need)) {
             File outputPath = new File(Screenshot.ScreenshotFolder);
             if (outputPath.exists()){
@@ -151,12 +158,6 @@ public class Monkey {
         Timer timer = new Timer();
         //延迟0秒，并且每过5s执行一次
         timer.schedule(new MonkeyDaemon(UDID,BUNDLEID), 0, loopTime);
-
-        if (!TestCase.equals("")){
-            new CaseEvent(iosDriver).generateCase(TestCase); //生成case
-        }else {
-            log_info("未配置测试用例,进行Monkey测试!");
-        }
 
         GetPerformance getPerformance= new GetPerformance();
         HashMap<String, Object> args = getPerformance.startTrace(iosDriver,TRACEPATH);

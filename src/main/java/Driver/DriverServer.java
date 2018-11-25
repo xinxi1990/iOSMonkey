@@ -52,7 +52,7 @@ public class DriverServer {
         caps.setCapability("udid", udid);
         caps.setCapability("app", BUNDLEID);
         //caps.setCapability("newCommandTimeout", 1800);
-        // caps.setCapability("wdaConnectionTimeout", 1800*1000);
+        //caps.setCapability("wdaConnectionTimeout", 1800*1000);
         caps.setCapability("wdaLocalPort", Integer.parseInt(String.valueOf(wdaPORT)));
         iosDriver = new IOSDriver(new URL(String.format("http://127.0.0.1:%s/wd/hub", appiumPort)),caps);
         log_info(String.format("capabilities配置:%s", iosDriver.getCapabilities()));

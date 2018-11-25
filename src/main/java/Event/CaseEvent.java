@@ -36,7 +36,6 @@ public class CaseEvent {
     private static IOSElement iosElement;
     private static DriverServer driverServer;
     public static String projectPath = System.getProperty("user.dir");
-    //public static String  casePath = projectPath  + "/src/main/java/TestCase/testcase.yaml";
 
     public CaseEvent(IOSDriver Driver) {
         this.iosDriver = Driver;
@@ -52,7 +51,6 @@ public class CaseEvent {
 
 
     public void generateCase(String casePath) throws InterruptedException {
-        new CaseEvent(iosDriver).generateCase(casePath);
         log_info("测试用例文件路径:" + casePath);
         Map caseYaml = readYaml(casePath);
         generateRule(caseYaml);

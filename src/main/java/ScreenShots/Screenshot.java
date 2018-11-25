@@ -18,6 +18,7 @@ public class Screenshot {
 	public static String screenshotPath1 ;
 	public static String screenshotPath2 ;
 	public static String udid;
+	private static int waitShot = 500;
 
 	public Screenshot(String UDID,String Folder) {
 		udid = UDID;
@@ -33,8 +34,6 @@ public class Screenshot {
 		//File file = new File(projectPath);
 		//String RootPath = file.getParent();
 		//log_info("文件的上级目录为 : " + RootPath);
-
-
 		screenshotPath1 = ScreenshotFolder  + "iOSMonkey.png";
 		screenshotPath2 = ScreenshotFolder + String.format("iOSMonkey%s.png",String.format("%03d", COUNT));
 		String screenshotCmd = String.format("xcrun simctl io booted screenshot %s", screenshotPath1);
@@ -56,7 +55,7 @@ public class Screenshot {
 				e.printStackTrace();
 			}
 		}
-		Thread.sleep(500);
+		Thread.sleep(waitShot);
 		File file1 = new File(screenshotPath1);
 		if (file1.exists() && file1.length() > 0) {
 			new ModifyPic(screenshotPath1, screenshotPath2, "◯", "STYLE_ITALIC", 50, x, y, Color.RED);
