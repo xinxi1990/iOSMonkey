@@ -20501,3 +20501,86 @@ WDA端口:5678
 2018-11-20 17:37:40 [ INFO] - iOSMonkey  -上传报告成功!
 2018-11-20 21:12:46 [ INFO] - iOSMonkey  -当前时间:20181120211246
 2018-11-20 21:13:06 [ INFO] - iOSMonkey  -当前时间:20181120211306
+2018-11-25 16:06:31 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:11:34 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:11:34 [ INFO] - iOSMonkey  -步骤名字:Model.StepsModel@1a3869f4
+2018-11-25 16:11:43 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:11:43 [ INFO] - iOSMonkey  -步骤名字:test1
+2018-11-25 16:22:08 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:22:08 [ INFO] - iOSMonkey  -步骤名字:点击Toolbars按钮
+2018-11-25 16:22:08 [ INFO] - iOSMonkey  -查询元素:XXXX
+2018-11-25 16:22:08 [ INFO] - iOSMonkey  -事件动作:click
+2018-11-25 16:22:08 [ INFO] - iOSMonkey  -等待事件:500
+2018-11-25 16:26:37 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:29:08 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:34:02 [ INFO] - iOSMonkey  -用例名字:test1
+2018-11-25 16:53:42 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 16:54:02 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 16:54:32 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 16:58:41 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:01:15 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:01:27 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:02:02 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:02:21 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:02:44 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:03:10 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:05:46 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:06:31 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:07:34 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:07:56 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:12:54 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:13:58 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:13:58 [ INFO] - iOSMonkey  -测试用例:testcase
+2018-11-25 17:13:58 [ INFO] - iOSMonkey  -用例名字:logintest
+2018-11-25 17:13:58 [ INFO] - iOSMonkey  -用例步骤:[{when=name;我的, by=name;我的, action=click, sleeptime=500}, {when=name;我的学生证, by=name;我的学生证, action=click, sleeptime=500}, {when=name;手机登录, by=name;手机登录, action=click, sleeptime=500}, {when=, by=name;使用密码登录, action=click, sleeptime=500}, {when=, by=xpath;//XCUIElementTypeTextField, action=sendKeys;15010158425, sleeptime=500}, {when=, by=xpath;//XCUIElementTypeSecureTextField, action=sendKeys;123456, sleeptime=500}, {when=, by=name;登录, action=click, sleeptime=500}]
+2018-11-25 17:13:58 [ INFO] - iOSMonkey  -检查【我的】是否存在
+2018-11-25 17:14:56 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:14:56 [ INFO] - iOSMonkey  -测试用例:testcase
+2018-11-25 17:14:56 [ INFO] - iOSMonkey  -用例名字:logintest
+2018-11-25 17:14:56 [ INFO] - iOSMonkey  -用例步骤:[{when=我的, by=name;我的, action=click, sleeptime=500}, {when=name;我的学生证, by=name;我的学生证, action=click, sleeptime=500}, {when=name;手机登录, by=name;手机登录, action=click, sleeptime=500}, {when=, by=name;使用密码登录, action=click, sleeptime=500}, {when=, by=xpath;//XCUIElementTypeTextField, action=sendKeys;15010158425, sleeptime=500}, {when=, by=xpath;//XCUIElementTypeSecureTextField, action=sendKeys;123456, sleeptime=500}, {when=, by=name;登录, action=click, sleeptime=500}]
+2018-11-25 17:15:41 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:15:41 [ INFO] - iOSMonkey  -测试用例:testcase
+2018-11-25 17:15:41 [ INFO] - iOSMonkey  -用例名字:logintest
+2018-11-25 17:15:41 [ INFO] - iOSMonkey  -用例步骤:[{when=name;我的, by=name;我的, action=click, sleeptime=500}]
+2018-11-25 17:15:41 [ INFO] - iOSMonkey  -检查【我的】是否存在
+2018-11-25 17:23:44 [ INFO] - iOSMonkey  -kill AppiumServer命令:kill -9 81060
+2018-11-25 17:23:44 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125172344_appium.log --relaxed-security
+2018-11-25 17:24:38 [ INFO] - iOSMonkey  -kill AppiumServer命令:kill -9 82874
+2018-11-25 17:24:38 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125172438_appium.log --relaxed-security
+2018-11-25 17:26:01 [ INFO] - iOSMonkey  -kill WDAServer命令:kill -9 83685
+2018-11-25 17:26:02 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125172601_appium.log --relaxed-security
+2018-11-25 17:36:51 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125173651_appium.log --relaxed-security
+2018-11-25 17:39:23 [ INFO] - iOSMonkey  -kill WDAServer命令:kill -9 87720
+2018-11-25 17:39:23 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125173922_appium.log --relaxed-security
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -capabilities配置:Capabilities {app: com.iOS.Demo, automationName: xcuitest, browserName: , databaseEnabled: false, deviceName: iPhone, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: MAC, takesScreenshot: true, udid: 606EC265-1ED8-454D-AF80-BEB..., wdaLocalPort: 8001, webStorageEnabled: false}
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -app启动!
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -测试用例:testcase
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -用例名字:case1
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -用例步骤:[{when=name;Action Sheets, by=name;Action Sheets, action=click, sleeptime=500}]
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -检查【Action Sheets】是否存在
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -Action Sheets存在
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -定位元素方法:name
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -定位元素值:Action Sheets
+2018-11-25 17:39:56 [ INFO] - iOSMonkey  -事件动作:click
+2018-11-25 17:39:57 [ INFO] - iOSMonkey  -等待时间:500
+2018-11-25 18:03:10 [ INFO] - iOSMonkey  -kill WDAServer命令:kill -9 88219
+2018-11-25 18:03:10 [ INFO] - iOSMonkey  -appium运行命令:appium -a 127.0.0.1 -p 4723 --log .//20181125180309_appium.log --relaxed-security
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -capabilities配置:Capabilities {app: com.iOS.Demo, automationName: xcuitest, browserName: , databaseEnabled: false, deviceName: iPhone, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: MAC, takesScreenshot: true, udid: 606EC265-1ED8-454D-AF80-BEB..., wdaLocalPort: 8001, webStorageEnabled: false}
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -app启动!
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -测试用例文件路径:/Users/xinxi/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -测试用例:testcase
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -用例名字:case1
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -用例步骤:[{when=name;Action Sheets, by=name;Action Sheets, action=click, sleeptime=500}, {when=name;Other, by=name;Other, action=click, sleeptime=500}]
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -检查【Action Sheets】是否存在
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -Action Sheets存在
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -定位元素方法:name
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -定位元素值:Action Sheets
+2018-11-25 18:03:41 [ INFO] - iOSMonkey  -事件动作:click
+2018-11-25 18:03:42 [ INFO] - iOSMonkey  -等待时间:500
+2018-11-25 18:03:42 [ INFO] - iOSMonkey  -检查【Other】是否存在
+2018-11-25 18:03:43 [ INFO] - iOSMonkey  -Other存在
+2018-11-25 18:03:43 [ INFO] - iOSMonkey  -定位元素方法:name
+2018-11-25 18:03:43 [ INFO] - iOSMonkey  -定位元素值:Other
+2018-11-25 18:03:43 [ INFO] - iOSMonkey  -事件动作:click
+2018-11-25 18:03:44 [ INFO] - iOSMonkey  -等待时间:500

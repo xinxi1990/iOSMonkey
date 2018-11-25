@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -68,6 +69,26 @@ public class FileUntils {
 		}
 		return map;
 	}
+
+
+	/**
+	 * 读Yaml文件
+	 * param YamlName
+	 * return Map类型
+	 */
+	public static List readYamlList(String yamlpath) {
+
+		List list = null;
+		try{
+			File dumpFile = new File(yamlpath);
+			Yaml yaml = new Yaml();
+			list = yaml.load((new FileInputStream(dumpFile)));
+		}catch (Exception e){
+			System.out.println(String.format("读取%s异常! + \n + %s", yamlpath,e));
+		}
+		return list;
+	}
+
 
 	/**
 	 * 生成gif

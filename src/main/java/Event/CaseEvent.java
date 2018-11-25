@@ -1,8 +1,11 @@
 package Event;
 
 
+import Driver.DriverServer;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,14 +34,25 @@ public class CaseEvent {
     private static List ElementList;
     private static IOSDriver iosDriver;
     private static IOSElement iosElement;
+    private static DriverServer driverServer;
     public static String projectPath = System.getProperty("user.dir");
-    public static String  casePath = projectPath  + "/src/main/java/TestCase/testcase.yaml";
+    //public static String  casePath = projectPath  + "/src/main/java/TestCase/testcase.yaml";
 
     public CaseEvent(IOSDriver Driver) {
         this.iosDriver = Driver;
     }
 
-    public void generateCase() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
+        driverServer = new DriverServer("606EC265-1ED8-454D-AF80-BEB78A417B55",4723,8001);
+        driverServer.killWDAServer();
+        driverServer.killAppiumServer();
+        driverServer.startAppiumServer("./");
+        iosDriver = driverServer.baseDriver("com.iOS.Demo");
+    }
+
+
+    public void generateCase(String casePath) throws InterruptedException {
+        new CaseEvent(iosDriver).generateCase(casePath);
         log_info("测试用例文件路径:" + casePath);
         Map caseYaml = readYaml(casePath);
         generateRule(caseYaml);

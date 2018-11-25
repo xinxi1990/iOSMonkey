@@ -39,6 +39,7 @@ public class Monkey {
     private static String TRACEPATH;
     private static String ScreenshotFolder;
     private static String AppiumLogFolder;
+    private static String TestCase;
     private static String Need = "true";
     private static Dimension dimension;
     private boolean is_running = true;
@@ -71,7 +72,6 @@ public class Monkey {
                 } else if ("-h".equals(args[optSetting])) {
                     NEEDHELP = true;
                     System.out.println("-f:配置文件");
-                    System.out.println("-c:测试用例文件");
                     break;
                 }
             }
@@ -89,6 +89,8 @@ public class Monkey {
             VERBOSE = (String) configMap.get("VERBOSE");
             TRACEPATH = (String) configMap.get("TRACEPATH");
             AppiumLogFolder = (String) configMap.get("AppiumLogFolder");
+            TestCase = (String) configMap.get("TestCase");
+
             try {
                 log_info(
                         "\n" + "测试设备:" + UDID +
@@ -149,7 +151,13 @@ public class Monkey {
         Timer timer = new Timer();
         //延迟0秒，并且每过5s执行一次
         timer.schedule(new MonkeyDaemon(UDID,BUNDLEID), 0, loopTime);
-        new CaseEvent(iosDriver).generateCase(); //生成case
+
+        if (!TestCase.equals("")){
+            new CaseEvent(iosDriver).generateCase(TestCase); //生成case
+        }else {
+            log_info("未配置测试用例,进行Monkey测试!");
+        }
+
         GetPerformance getPerformance= new GetPerformance();
         HashMap<String, Object> args = getPerformance.startTrace(iosDriver,TRACEPATH);
         try {

@@ -33,7 +33,6 @@ cd /target 目录下
 
 参数说明:
 -f: config文件配置地址
--c: 测试用例地址
 
 config文件中配置数据:
 
@@ -47,8 +46,9 @@ ScreenshotFolder: "～/iOSMonkey" #截图目录
 VERBOSE: "true" # 打印日志
 TRACEPATH: "～/iOSMonkey" # 性能文件路径
 AppiumLogFolder: "～/iOSMonkey" # appiumlog文件路径
+TestCase: "/Users/xinxi/Desktop/iOSMonkey/testcase.yaml" # 测试用例文件,可选项
 
-java -jar iOSMonkey-1.0.jar -f ~/config.yaml -c 1
+java -jar iOSMonkey-1.0.jar -f ~/config.yaml
 
 在APP setCapability 添加 wdaLocalPort 8101 8102 
 默认的webDriverAgent监听的端口是8000,不冲突就可以并发了
@@ -58,8 +58,7 @@ java -jar iOSMonkey-1.0.jar -f ~/config.yaml -c 1
  
 安装ffmpeg brew install ffmpeg
  
-![image](./iOSMonkey.gif)
-
+![image](https://note.youdao.com/yws/public/resource/4fb1771c92bd4c6fc3d11c145ce90c67/xmlnote/WEBRESOURCE7d4053341f063c70b4ad078e79440159/15988)
 
 # config配置文件
 在代码中config目录下config.yaml
